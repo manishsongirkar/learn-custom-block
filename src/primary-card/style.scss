@@ -1,0 +1,40 @@
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+
+.primary-card * {
+	box-sizing: border-box;
+}
+
+.primary-card {
+	box-sizing: border-box;
+
+	.row {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 -15px;
+	}
+
+	.column {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 0 15px;
+
+		@media (max-width: 767px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+
+	.card-title {
+		margin: 0.3em 0;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+}

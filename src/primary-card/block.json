@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "textdomain": "learn-custom-block",
+
+
+  "name": "learn-custom-block/primary-card",
+  "title": "Primary Card",
+  "icon": "align-pull-left",
+  "category": "media",
+
+
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "wide"
+    },
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".card-title"
+    },
+    "description": {
+      "type": "string",
+      "source": "html",
+      "selector": ".card-description"
+    },
+    "mediaID": {
+      "type": "number"
+    },
+    "mediaURL": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "src"
+    }
+  },
+
+
+
+  "example": {
+	"viewportWidth": 900,
+    "attributes": {
+      "title": "Lorem ipsum dolor sit amet",
+	  "mediaURL": "https://s.w.org/images/core/5.3/MtBlanc1.jpg",
+	  "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+    }
+  },
+
+
+
+  "supports": {
+    "align": [ "wide", "full" ],
+    "html": false,
+    "color": {
+      "background": false
+    }
+  },
+
+
+
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
