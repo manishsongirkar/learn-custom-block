@@ -45,8 +45,17 @@
       "full"
     ],
     "html": false,
+    "anchor": true,
+    "multiple": true,
     "color": {
-      "background": false
+      "background": false,
+      "link": true,
+      "gradient": true
+    },
+    "spacing": {
+      "margin": false,
+      "padding": false,
+      "blockGap": false
     }
   },
   "editorScript": "file:./index.js",
