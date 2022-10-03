@@ -23,6 +23,7 @@
 function create_block_learn_custom_block_block_init() {
 
 	register_block_type( __DIR__ . '/build/learn-block' );
+	register_block_type( __DIR__ . '/build/primary-card-inner-block' );
 	register_block_type( __DIR__ . '/build/primary-card' );
 
 }
